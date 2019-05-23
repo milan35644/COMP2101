@@ -23,7 +23,7 @@ echo "Task 2 for the exercise is to modify it to also display the 10 largest fil
 echo "============================================================================================================="
 sleep 5
 #find / 2>/dev/null -type f -exec lsw -l --block-size=M {} + | sort -rh -k 5 | head -n 10 | awk '{print $5, $3, $9}'
-find $HOME -type f -exec ls -alh  --block-size=M {} \; | sort -hr -k5 | head -n 10
+find /home/ -type f -exec ls -alh  --block-size=M {} \; | sort -hr -k5 | head -n 10 | awk '{print $5, $3, $9}'
 #du -ha / 2>/dev/null | sort -r -k 1 | head -n 10
 #sdhfbjdskfgjkdahglkjhdflgjkhadlfkjghladfkjhgkjlsd
 echo ""
