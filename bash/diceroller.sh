@@ -21,12 +21,10 @@ echo "Second Line"
 echo "
 Rolling...
 $(( RANDOM % 6 + 1)), $(( RANDOM % 6 + 1 )), $(( RANDOM % 6 + 1 )), $(( RANDOM % 6 + 1 )), $(( RANDOM % 6 + 1 )), $(( RANDOM % 6 + 1 )) rolled
-
 20 sided Rolling
-
 $(( RANDOM % 20 + 1))
-
 "
+
 #echo "Third Line: Rolling 20 times"
 #for i in {1..20}; do $((RANDOM % 6+ 1)) && echo ","; done
 #for ((n=0;n<20;n++))
