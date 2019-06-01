@@ -13,7 +13,7 @@
 # Variables   #
 ###############
 name="$USER"
-date=$(date +'%I:%M %p %A')
+date=$(date +'%I:%M %p')
 hostname=$(hostname)
 weekday=$(date +%u)
 ###############
