@@ -15,14 +15,14 @@
 name="$USER"
 date=$(date +'%I:%M %p %A')
 hostname=$(hostname)
-week=$(date +%u)
+weekday=$(date +%u)
 ###############
 # Main        #
 ###############
 cat <<EOF
 Welcome to planet $hostname, $name!
 EOF
-if [ "$week" = "6" ] || [ "$week" = "7" ]
+if [ "$weekday" = "6" ] || [ "$weekday" = "7" ]
 then
    echo "It is $date on Weekend."
 else
